@@ -1,0 +1,21 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+         facebook:
+          clientId: 291240189673006
+          clientSecret: b95cf906ff2cda158b4fbd321e86e17d            
+          scope:
+           - email
+           - public_profile
+
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testdb200
+    username: root
+    password: mohit@123
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
